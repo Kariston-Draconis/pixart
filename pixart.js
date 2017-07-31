@@ -14,5 +14,8 @@ for (var i = 0; i < 20; i++) {
 };
 
 document.body.addEventListener('click', function() {
-  event.target.style.backgroundColor = 'green';
+  color = brush.style.backgroundColor
+  if (event.target.className === "square") {
+    event.target.style.backgroundColor = color;
+  }
 })
