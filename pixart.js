@@ -12,3 +12,7 @@ for (var i = 0; i < 20; i++) {
   square.className = "square"
   document.body.appendChild(square);
 };
+
+document.body.addEventListener('click', function() {
+  event.target.style.backgroundColor = 'green';
+})
