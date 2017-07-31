@@ -13,7 +13,7 @@ for (var i = 0; i < 20; i++) {
   document.body.appendChild(square);
 };
 
-document.body.addEventListener('click', function() {
+document.body.addEventListener('mouseover', function() {
   color = brush.style.backgroundColor
   if (event.target.className === "square") {
     event.target.style.backgroundColor = color;
